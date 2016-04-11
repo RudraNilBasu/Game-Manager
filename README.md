@@ -5,7 +5,11 @@ Produce a time schedule for a project with given number of workers and deadline.
 
 * Every aspect ( no of days remaining, no of workers present, etc) will be defined by the user.
 
-#Softwares Used
+###Notes
+
+* All the Database for the project can be found in the "Database" Folder
+
+###Softwares Used
 
 * [Visual Studio 2012](https://www.microsoft.com/en-in/download/details.aspx?id=34673)
 * [Microsoft Access 2013](https://www.microsoft.com/en-in/download/details.aspx?id=39358)
