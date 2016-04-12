@@ -4,6 +4,7 @@ NOTE : Work Hour starts from 10 AM to 10 PM
 
 ###Expected Features / TODO
 
+* At a specific time, only one employee for a specific domain can arrive.
 * Different Work domain for each employee (Programmer, Graphics Designer and Sound Designer)
 * Different Entry / Exit times for each employee.
 * Different number of working days for each employee (within Monday - Friday, we don't like to make anyone work on weekends, we are not that bad)
