@@ -12,6 +12,8 @@ NOTE : Work Hour starts from 10 AM to 10 PM
 * Display of full schedule for all employee (Normal Time Table)
 * Display of Time Table only for specific domain of employee (Checkbox). For Example - to display the schedule for only sound designers, or only sound and graphics designers
 
+For more info check out the Documentation (Not updated yet).
+
 ###Notes
 
 * All the Database for the project can be found in the "Database" Folder
