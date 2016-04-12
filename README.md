@@ -1,9 +1,12 @@
 # Manager
-Produce a time schedule for a project with given number of workers and deadline. This is a part of second year project on Visual Basic Lab.
+Produce a time schedule for a Game Development project with given number of workers with different domain cc. This is a part of second year project on Visual Basic Lab.
 
 ###Expected Features / TODO
 
-* Every aspect ( no of days remaining, no of workers present, etc) will be defined by the user.
+* Different Work domain for each employee (Programmer, Graphics Designer and Sound Designer)
+* Different Entry / Exit times for each employee.
+* Different number of working days for each employee (within Monday - Friday, we don't like to make anyone work on weekends, we are not that bad)
+* Different hours of work for each day for each employee.
 
 ###Notes
 
