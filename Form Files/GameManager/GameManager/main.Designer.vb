@@ -44,7 +44,7 @@ Partial Class main
         Me.Label1.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label1.Location = New System.Drawing.Point(122, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(298, 48)
+        Me.Label1.Size = New System.Drawing.Size(306, 49)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Game Manager"
         '
@@ -55,7 +55,7 @@ Partial Class main
         Me.Label2.ForeColor = System.Drawing.SystemColors.AppWorkspace
         Me.Label2.Location = New System.Drawing.Point(218, 57)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(69, 25)
+        Me.Label2.Size = New System.Drawing.Size(70, 25)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "PriZm"
         '
