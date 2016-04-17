@@ -15,4 +15,21 @@
 
     
     
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        Employee_DetailsBindingSource.AddNew()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Try
+            Employee_DetailsBindingSource.EndEdit()
+            Employee_DetailsTableAdapter.Update(DatabaseDataSet.Employee_Details)
+            MsgBox("Saved!")
+        Catch ex As Exception
+            MsgBox("Failed to Save")
+        End Try
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Employee_DetailsBindingSource.RemoveCurrent()
+    End Sub
 End Class

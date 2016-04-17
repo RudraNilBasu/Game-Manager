@@ -79,6 +79,8 @@ Partial Class employee
         Me.WednesdayDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.ThursdayDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.FridayDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         IDLabel = New System.Windows.Forms.Label()
         NAMELabel = New System.Windows.Forms.Label()
         PositionLabel = New System.Windows.Forms.Label()
@@ -229,9 +231,9 @@ Partial Class employee
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(626, 148)
+        Me.Button1.Location = New System.Drawing.Point(626, 144)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(119, 23)
+        Me.Button1.Size = New System.Drawing.Size(156, 23)
         Me.Button1.TabIndex = 3
         Me.Button1.Text = "Add Employee"
         Me.Button1.UseVisualStyleBackColor = True
@@ -561,12 +563,32 @@ Partial Class employee
         Me.FridayDataGridViewCheckBoxColumn.HeaderText = "Friday"
         Me.FridayDataGridViewCheckBoxColumn.Name = "FridayDataGridViewCheckBoxColumn"
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(626, 173)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 29
+        Me.Button3.Text = "Save"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(707, 173)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 30
+        Me.Button4.Text = "Delete"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'employee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(1104, 916)
+        Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(IDLabel)
         Me.Controls.Add(Me.IDTextBox)
@@ -654,4 +676,6 @@ Partial Class employee
     Friend WithEvents WednesdayDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents ThursdayDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents FridayDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
+    Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class
