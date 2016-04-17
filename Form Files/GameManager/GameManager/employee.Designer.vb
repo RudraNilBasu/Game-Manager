@@ -41,12 +41,10 @@ Partial Class employee
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.DatabaseDataSet = New GameManager.DatabaseDataSet()
-        Me.Employee_DetailsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Employee_DetailsTableAdapter = New GameManager.DatabaseDataSetTableAdapters.Employee_DetailsTableAdapter()
-        Me.TableAdapterManager = New GameManager.DatabaseDataSetTableAdapters.TableAdapterManager()
         Me.Employee_DetailsBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.Employee_DetailsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DatabaseDataSet = New GameManager.DatabaseDataSet()
         Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
@@ -81,6 +79,9 @@ Partial Class employee
         Me.FridayDataGridViewCheckBoxColumn = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Employee_DetailsTableAdapter = New GameManager.DatabaseDataSetTableAdapters.Employee_DetailsTableAdapter()
+        Me.TableAdapterManager = New GameManager.DatabaseDataSetTableAdapters.TableAdapterManager()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         IDLabel = New System.Windows.Forms.Label()
         NAMELabel = New System.Windows.Forms.Label()
         PositionLabel = New System.Windows.Forms.Label()
@@ -92,18 +93,19 @@ Partial Class employee
         ThursdayLabel = New System.Windows.Forms.Label()
         FridayLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Employee_DetailsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Employee_DetailsBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Employee_DetailsBindingNavigator.SuspendLayout()
+        CType(Me.Employee_DetailsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'IDLabel
         '
         IDLabel.AutoSize = True
         IDLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        IDLabel.Location = New System.Drawing.Point(280, 254)
+        IDLabel.Location = New System.Drawing.Point(280, 149)
         IDLabel.Name = "IDLabel"
         IDLabel.Size = New System.Drawing.Size(25, 17)
         IDLabel.TabIndex = 8
@@ -113,7 +115,7 @@ Partial Class employee
         '
         NAMELabel.AutoSize = True
         NAMELabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        NAMELabel.Location = New System.Drawing.Point(280, 282)
+        NAMELabel.Location = New System.Drawing.Point(280, 177)
         NAMELabel.Name = "NAMELabel"
         NAMELabel.Size = New System.Drawing.Size(51, 17)
         NAMELabel.TabIndex = 10
@@ -123,7 +125,7 @@ Partial Class employee
         '
         PositionLabel.AutoSize = True
         PositionLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        PositionLabel.Location = New System.Drawing.Point(280, 310)
+        PositionLabel.Location = New System.Drawing.Point(280, 205)
         PositionLabel.Name = "PositionLabel"
         PositionLabel.Size = New System.Drawing.Size(62, 17)
         PositionLabel.TabIndex = 12
@@ -133,7 +135,7 @@ Partial Class employee
         '
         Entry_TimeLabel.AutoSize = True
         Entry_TimeLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Entry_TimeLabel.Location = New System.Drawing.Point(280, 339)
+        Entry_TimeLabel.Location = New System.Drawing.Point(280, 234)
         Entry_TimeLabel.Name = "Entry_TimeLabel"
         Entry_TimeLabel.Size = New System.Drawing.Size(80, 17)
         Entry_TimeLabel.TabIndex = 14
@@ -143,7 +145,7 @@ Partial Class employee
         '
         Exit_TimeLabel.AutoSize = True
         Exit_TimeLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Exit_TimeLabel.Location = New System.Drawing.Point(280, 367)
+        Exit_TimeLabel.Location = New System.Drawing.Point(280, 262)
         Exit_TimeLabel.Name = "Exit_TimeLabel"
         Exit_TimeLabel.Size = New System.Drawing.Size(69, 17)
         Exit_TimeLabel.TabIndex = 16
@@ -153,7 +155,7 @@ Partial Class employee
         '
         MondayLabel.AutoSize = True
         MondayLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        MondayLabel.Location = New System.Drawing.Point(280, 396)
+        MondayLabel.Location = New System.Drawing.Point(280, 291)
         MondayLabel.Name = "MondayLabel"
         MondayLabel.Size = New System.Drawing.Size(62, 17)
         MondayLabel.TabIndex = 18
@@ -163,7 +165,7 @@ Partial Class employee
         '
         TuesdayLabel.AutoSize = True
         TuesdayLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        TuesdayLabel.Location = New System.Drawing.Point(280, 426)
+        TuesdayLabel.Location = New System.Drawing.Point(280, 321)
         TuesdayLabel.Name = "TuesdayLabel"
         TuesdayLabel.Size = New System.Drawing.Size(67, 17)
         TuesdayLabel.TabIndex = 20
@@ -173,7 +175,7 @@ Partial Class employee
         '
         WednesdayLabel.AutoSize = True
         WednesdayLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        WednesdayLabel.Location = New System.Drawing.Point(280, 456)
+        WednesdayLabel.Location = New System.Drawing.Point(280, 351)
         WednesdayLabel.Name = "WednesdayLabel"
         WednesdayLabel.Size = New System.Drawing.Size(87, 17)
         WednesdayLabel.TabIndex = 22
@@ -183,7 +185,7 @@ Partial Class employee
         '
         ThursdayLabel.AutoSize = True
         ThursdayLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        ThursdayLabel.Location = New System.Drawing.Point(280, 486)
+        ThursdayLabel.Location = New System.Drawing.Point(280, 381)
         ThursdayLabel.Name = "ThursdayLabel"
         ThursdayLabel.Size = New System.Drawing.Size(72, 17)
         ThursdayLabel.TabIndex = 24
@@ -193,7 +195,7 @@ Partial Class employee
         '
         FridayLabel.AutoSize = True
         FridayLabel.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        FridayLabel.Location = New System.Drawing.Point(280, 516)
+        FridayLabel.Location = New System.Drawing.Point(280, 411)
         FridayLabel.Name = "FridayLabel"
         FridayLabel.Size = New System.Drawing.Size(51, 17)
         FridayLabel.TabIndex = 26
@@ -213,8 +215,8 @@ Partial Class employee
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"All", "Programmer", "Graphics Designer", "Sound Designer"})
-        Me.ComboBox1.Location = New System.Drawing.Point(157, 147)
+        Me.ComboBox1.Items.AddRange(New Object() {"All", "Programmer", "Graphics", "Sound"})
+        Me.ComboBox1.Location = New System.Drawing.Point(95, 42)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(121, 24)
         Me.ComboBox1.TabIndex = 1
@@ -223,7 +225,7 @@ Partial Class employee
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label2.Location = New System.Drawing.Point(69, 150)
+        Me.Label2.Location = New System.Drawing.Point(7, 45)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(58, 17)
         Me.Label2.TabIndex = 2
@@ -242,15 +244,17 @@ Partial Class employee
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label3.Location = New System.Drawing.Point(131, 112)
+        Me.Label3.Location = New System.Drawing.Point(92, 18)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(53, 17)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Search"
+        Me.Label3.Visible = False
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(157, 177)
+        Me.Button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Button2.Location = New System.Drawing.Point(95, 72)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 5
@@ -266,26 +270,6 @@ Partial Class employee
         Me.PictureBox1.Size = New System.Drawing.Size(115, 107)
         Me.PictureBox1.TabIndex = 6
         Me.PictureBox1.TabStop = False
-        '
-        'DatabaseDataSet
-        '
-        Me.DatabaseDataSet.DataSetName = "DatabaseDataSet"
-        Me.DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'Employee_DetailsBindingSource
-        '
-        Me.Employee_DetailsBindingSource.DataMember = "Employee Details"
-        Me.Employee_DetailsBindingSource.DataSource = Me.DatabaseDataSet
-        '
-        'Employee_DetailsTableAdapter
-        '
-        Me.Employee_DetailsTableAdapter.ClearBeforeFill = True
-        '
-        'TableAdapterManager
-        '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.Employee_DetailsTableAdapter = Me.Employee_DetailsTableAdapter
-        Me.TableAdapterManager.UpdateOrder = GameManager.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'Employee_DetailsBindingNavigator
         '
@@ -315,6 +299,16 @@ Partial Class employee
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
         Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 24)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'Employee_DetailsBindingSource
+        '
+        Me.Employee_DetailsBindingSource.DataMember = "Employee Details"
+        Me.Employee_DetailsBindingSource.DataSource = Me.DatabaseDataSet
+        '
+        'DatabaseDataSet
+        '
+        Me.DatabaseDataSet.DataSetName = "DatabaseDataSet"
+        Me.DatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'BindingNavigatorCountItem
         '
@@ -403,7 +397,7 @@ Partial Class employee
         'IDTextBox
         '
         Me.IDTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Employee_DetailsBindingSource, "ID", True))
-        Me.IDTextBox.Location = New System.Drawing.Point(373, 251)
+        Me.IDTextBox.Location = New System.Drawing.Point(373, 146)
         Me.IDTextBox.Name = "IDTextBox"
         Me.IDTextBox.Size = New System.Drawing.Size(200, 22)
         Me.IDTextBox.TabIndex = 9
@@ -411,7 +405,7 @@ Partial Class employee
         'NAMETextBox
         '
         Me.NAMETextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Employee_DetailsBindingSource, "NAME", True))
-        Me.NAMETextBox.Location = New System.Drawing.Point(373, 279)
+        Me.NAMETextBox.Location = New System.Drawing.Point(373, 174)
         Me.NAMETextBox.Name = "NAMETextBox"
         Me.NAMETextBox.Size = New System.Drawing.Size(200, 22)
         Me.NAMETextBox.TabIndex = 11
@@ -419,7 +413,7 @@ Partial Class employee
         'PositionTextBox
         '
         Me.PositionTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Employee_DetailsBindingSource, "Position", True))
-        Me.PositionTextBox.Location = New System.Drawing.Point(373, 307)
+        Me.PositionTextBox.Location = New System.Drawing.Point(373, 202)
         Me.PositionTextBox.Name = "PositionTextBox"
         Me.PositionTextBox.Size = New System.Drawing.Size(200, 22)
         Me.PositionTextBox.TabIndex = 13
@@ -427,7 +421,7 @@ Partial Class employee
         'Entry_TimeDateTimePicker
         '
         Me.Entry_TimeDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.Employee_DetailsBindingSource, "Entry Time", True))
-        Me.Entry_TimeDateTimePicker.Location = New System.Drawing.Point(373, 335)
+        Me.Entry_TimeDateTimePicker.Location = New System.Drawing.Point(373, 230)
         Me.Entry_TimeDateTimePicker.Name = "Entry_TimeDateTimePicker"
         Me.Entry_TimeDateTimePicker.Size = New System.Drawing.Size(200, 22)
         Me.Entry_TimeDateTimePicker.TabIndex = 15
@@ -435,7 +429,7 @@ Partial Class employee
         'Exit_TimeDateTimePicker
         '
         Me.Exit_TimeDateTimePicker.DataBindings.Add(New System.Windows.Forms.Binding("Value", Me.Employee_DetailsBindingSource, "Exit Time", True))
-        Me.Exit_TimeDateTimePicker.Location = New System.Drawing.Point(373, 363)
+        Me.Exit_TimeDateTimePicker.Location = New System.Drawing.Point(373, 258)
         Me.Exit_TimeDateTimePicker.Name = "Exit_TimeDateTimePicker"
         Me.Exit_TimeDateTimePicker.Size = New System.Drawing.Size(200, 22)
         Me.Exit_TimeDateTimePicker.TabIndex = 17
@@ -443,7 +437,7 @@ Partial Class employee
         'MondayCheckBox
         '
         Me.MondayCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.Employee_DetailsBindingSource, "Monday", True))
-        Me.MondayCheckBox.Location = New System.Drawing.Point(373, 391)
+        Me.MondayCheckBox.Location = New System.Drawing.Point(373, 286)
         Me.MondayCheckBox.Name = "MondayCheckBox"
         Me.MondayCheckBox.Size = New System.Drawing.Size(200, 24)
         Me.MondayCheckBox.TabIndex = 19
@@ -453,7 +447,7 @@ Partial Class employee
         'TuesdayCheckBox
         '
         Me.TuesdayCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.Employee_DetailsBindingSource, "Tuesday", True))
-        Me.TuesdayCheckBox.Location = New System.Drawing.Point(373, 421)
+        Me.TuesdayCheckBox.Location = New System.Drawing.Point(373, 316)
         Me.TuesdayCheckBox.Name = "TuesdayCheckBox"
         Me.TuesdayCheckBox.Size = New System.Drawing.Size(200, 24)
         Me.TuesdayCheckBox.TabIndex = 21
@@ -463,7 +457,7 @@ Partial Class employee
         'WednesdayCheckBox
         '
         Me.WednesdayCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.Employee_DetailsBindingSource, "Wednesday", True))
-        Me.WednesdayCheckBox.Location = New System.Drawing.Point(373, 451)
+        Me.WednesdayCheckBox.Location = New System.Drawing.Point(373, 346)
         Me.WednesdayCheckBox.Name = "WednesdayCheckBox"
         Me.WednesdayCheckBox.Size = New System.Drawing.Size(200, 24)
         Me.WednesdayCheckBox.TabIndex = 23
@@ -473,7 +467,7 @@ Partial Class employee
         'ThursdayCheckBox
         '
         Me.ThursdayCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.Employee_DetailsBindingSource, "Thursday", True))
-        Me.ThursdayCheckBox.Location = New System.Drawing.Point(373, 481)
+        Me.ThursdayCheckBox.Location = New System.Drawing.Point(373, 376)
         Me.ThursdayCheckBox.Name = "ThursdayCheckBox"
         Me.ThursdayCheckBox.Size = New System.Drawing.Size(200, 24)
         Me.ThursdayCheckBox.TabIndex = 25
@@ -483,7 +477,7 @@ Partial Class employee
         'FridayCheckBox
         '
         Me.FridayCheckBox.DataBindings.Add(New System.Windows.Forms.Binding("CheckState", Me.Employee_DetailsBindingSource, "Friday", True))
-        Me.FridayCheckBox.Location = New System.Drawing.Point(373, 511)
+        Me.FridayCheckBox.Location = New System.Drawing.Point(373, 406)
         Me.FridayCheckBox.Name = "FridayCheckBox"
         Me.FridayCheckBox.Size = New System.Drawing.Size(200, 24)
         Me.FridayCheckBox.TabIndex = 27
@@ -497,7 +491,7 @@ Partial Class employee
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.IDDataGridViewTextBoxColumn, Me.NAMEDataGridViewTextBoxColumn, Me.PositionDataGridViewTextBoxColumn, Me.EntryTimeDataGridViewTextBoxColumn, Me.ExitTimeDataGridViewTextBoxColumn, Me.MondayDataGridViewCheckBoxColumn, Me.TuesdayDataGridViewCheckBoxColumn, Me.WednesdayDataGridViewCheckBoxColumn, Me.ThursdayDataGridViewCheckBoxColumn, Me.FridayDataGridViewCheckBoxColumn})
         Me.DataGridView1.DataSource = Me.Employee_DetailsBindingSource
-        Me.DataGridView1.Location = New System.Drawing.Point(12, 584)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 436)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowTemplate.Height = 24
         Me.DataGridView1.Size = New System.Drawing.Size(1025, 282)
@@ -581,12 +575,38 @@ Partial Class employee
         Me.Button4.Text = "Delete"
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Employee_DetailsTableAdapter
+        '
+        Me.Employee_DetailsTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.Employee_DetailsTableAdapter = Me.Employee_DetailsTableAdapter
+        Me.TableAdapterManager.UpdateOrder = GameManager.DatabaseDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label2)
+        Me.GroupBox1.Controls.Add(Me.Label3)
+        Me.GroupBox1.Controls.Add(Me.Button2)
+        Me.GroupBox1.ForeColor = System.Drawing.SystemColors.AppWorkspace
+        Me.GroupBox1.Location = New System.Drawing.Point(30, 144)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(229, 127)
+        Me.GroupBox1.TabIndex = 31
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Search"
+        '
         'employee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(1104, 916)
+        Me.ClientSize = New System.Drawing.Size(1104, 789)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.DataGridView1)
@@ -612,21 +632,19 @@ Partial Class employee
         Me.Controls.Add(Me.FridayCheckBox)
         Me.Controls.Add(Me.Employee_DetailsBindingNavigator)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label1)
         Me.Name = "employee"
         Me.Text = "employee"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Employee_DetailsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Employee_DetailsBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Employee_DetailsBindingNavigator.ResumeLayout(False)
         Me.Employee_DetailsBindingNavigator.PerformLayout()
+        CType(Me.Employee_DetailsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DatabaseDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -678,4 +696,5 @@ Partial Class employee
     Friend WithEvents FridayDataGridViewCheckBoxColumn As System.Windows.Forms.DataGridViewCheckBoxColumn
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
 End Class

@@ -32,4 +32,12 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Employee_DetailsBindingSource.RemoveCurrent()
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If ComboBox1.SelectedItem = "All" Then
+            DataGridView1.DataSource = Employee_DetailsBindingSource
+        ElseIf ComboBox1.SelectedItem = "Graphics" Then
+            DataGridView1.DataSource = Nothing
+        End If
+    End Sub
 End Class
