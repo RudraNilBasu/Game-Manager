@@ -8,7 +8,8 @@
         Dim a = TextBox1.Text
         Dim b = TextBox2.Text
         If a = "prizm" And b = "rudra" Then
-            MsgBox("Login Successful!")
+            main.Show()
+            Me.Hide()
         Else
             MsgBox("Retry")
         End If
