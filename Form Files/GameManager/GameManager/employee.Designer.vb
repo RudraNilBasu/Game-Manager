@@ -82,6 +82,9 @@ Partial Class employee
         Me.Employee_DetailsTableAdapter = New GameManager.DatabaseDataSetTableAdapters.Employee_DetailsTableAdapter()
         Me.TableAdapterManager = New GameManager.DatabaseDataSetTableAdapters.TableAdapterManager()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
         IDLabel = New System.Windows.Forms.Label()
         NAMELabel = New System.Windows.Forms.Label()
         PositionLabel = New System.Windows.Forms.Label()
@@ -290,6 +293,7 @@ Partial Class employee
         Me.Employee_DetailsBindingNavigator.Size = New System.Drawing.Size(1104, 27)
         Me.Employee_DetailsBindingNavigator.TabIndex = 7
         Me.Employee_DetailsBindingNavigator.Text = "BindingNavigator1"
+        Me.Employee_DetailsBindingNavigator.Visible = False
         '
         'BindingNavigatorAddNewItem
         '
@@ -600,12 +604,42 @@ Partial Class employee
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Search"
         '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(626, 216)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(75, 23)
+        Me.Button5.TabIndex = 32
+        Me.Button5.Text = "Previous"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(707, 216)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 33
+        Me.Button6.Text = "Next"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(859, 80)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(75, 23)
+        Me.Button7.TabIndex = 34
+        Me.Button7.Text = "Close"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
         'employee
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(1104, 789)
+        Me.Controls.Add(Me.Button7)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -697,4 +731,7 @@ Partial Class employee
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents Button5 As System.Windows.Forms.Button
+    Friend WithEvents Button6 As System.Windows.Forms.Button
+    Friend WithEvents Button7 As System.Windows.Forms.Button
 End Class

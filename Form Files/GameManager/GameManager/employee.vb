@@ -40,4 +40,16 @@
             DataGridView1.DataSource = Nothing
         End If
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Employee_DetailsBindingSource.MoveNext()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Employee_DetailsBindingSource.MovePrevious()
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        End
+    End Sub
 End Class

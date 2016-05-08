@@ -26,6 +26,7 @@ Partial Class main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -53,7 +54,7 @@ Partial Class main
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Assassin$", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label2.Location = New System.Drawing.Point(218, 57)
+        Me.Label2.Location = New System.Drawing.Point(336, 67)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(70, 25)
         Me.Label2.TabIndex = 2
@@ -68,12 +69,22 @@ Partial Class main
         Me.Button2.Text = "Time Table"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(131, 382)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(257, 23)
+        Me.Button3.TabIndex = 4
+        Me.Button3.Text = "Quit"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(533, 408)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -88,4 +99,5 @@ Partial Class main
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
