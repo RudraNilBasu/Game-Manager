@@ -99,12 +99,14 @@ ErrRe:
             End If
 
 SearchErr:
-            MsgBox("Error Occured Lol, didn't expect that, did you ? Err No " & Err.Number & vbNewLine & "Descripton : " & Err.Description)
-            Resume ErrEx
+            If Err.Number <> 0 Then
+                MsgBox("Error Occured Lol, didn't expect that, did you ? Err No " & Err.Number & vbNewLine & "Descripton : " & Err.Description)
+                Resume ErrEx
+            End If
 
 
-        End If
-        ' Search tut ends here
+            End If
+            ' Search tut ends here
 
     End Sub
 
