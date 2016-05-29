@@ -11,6 +11,10 @@
         'TODO: This line of code loads data into the 'DatabaseDataSet.Employee_Details' table. You can move, or remove it, as needed.
         Me.Employee_DetailsTableAdapter.Fill(Me.DatabaseDataSet.Employee_Details)
 
+        ' Setting the Time format to Time only 
+        Entry_TimeDateTimePicker.Format = DateTimePickerFormat.Time
+        Exit_TimeDateTimePicker.Format = DateTimePickerFormat.Time
+
         ' After this from search tutorial
         With DataGridView1
             .ClearSelection()
