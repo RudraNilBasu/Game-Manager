@@ -27,11 +27,12 @@ Partial Class main
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(130, 353)
+        Me.Button1.Location = New System.Drawing.Point(130, 327)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(258, 23)
         Me.Button1.TabIndex = 0
@@ -62,12 +63,13 @@ Partial Class main
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(130, 315)
+        Me.Button2.Location = New System.Drawing.Point(130, 298)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(258, 23)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Time Table"
         Me.Button2.UseVisualStyleBackColor = True
+        Me.Button2.Visible = False
         '
         'Button3
         '
@@ -78,12 +80,22 @@ Partial Class main
         Me.Button3.Text = "Quit"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(131, 353)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(257, 23)
+        Me.Button4.TabIndex = 5
+        Me.Button4.Text = "Credits"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.ClientSize = New System.Drawing.Size(533, 408)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
@@ -100,4 +112,5 @@ Partial Class main
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Button4 As System.Windows.Forms.Button
 End Class

@@ -70,6 +70,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="credits.Designer.vb">
+      <DependentUpon>credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="DatabaseDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -117,6 +123,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="credits.resx">
+      <DependentUpon>credits.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="employee.resx">
       <DependentUpon>employee.vb</DependentUpon>
     </EmbeddedResource>
