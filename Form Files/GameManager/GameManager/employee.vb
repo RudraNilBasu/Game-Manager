@@ -45,9 +45,13 @@
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Employee_DetailsBindingSource.RemoveCurrent()
     End Sub
+    Public Function noOfEmpl()
+        Dim hue As Integer
+        hue = Employee_DetailsBindingSource.Count
+        Return hue
+    End Function
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-
         If ComboBox1.SelectedItem = "All" Then
             DataGridView1.DataSource = Employee_DetailsBindingSource
             searchItem = "All"
@@ -109,8 +113,8 @@ SearchErr:
             End If
 
 
-            End If
-            ' Search tut ends here
+        End If
+        ' Search tut ends here
 
     End Sub
 
@@ -123,7 +127,8 @@ SearchErr:
     End Sub
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-        End
+        'End
+        Me.Close()
     End Sub
 
 

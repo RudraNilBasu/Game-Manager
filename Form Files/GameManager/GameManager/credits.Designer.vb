@@ -59,11 +59,11 @@ Partial Class credits
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Assassin$", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Monotype Corsiva", 16.2!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label3.Location = New System.Drawing.Point(290, 201)
+        Me.Label3.Location = New System.Drawing.Point(289, 199)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(229, 28)
+        Me.Label3.Size = New System.Drawing.Size(235, 34)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "rudranilbasu.github.io"
         '
@@ -81,7 +81,7 @@ Partial Class credits
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.SystemColors.AppWorkspace
-        Me.Label4.Location = New System.Drawing.Point(291, 229)
+        Me.Label4.Location = New System.Drawing.Point(291, 233)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(227, 20)
         Me.Label4.TabIndex = 4

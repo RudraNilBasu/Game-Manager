@@ -67,9 +67,8 @@ Partial Class main
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(258, 23)
         Me.Button2.TabIndex = 3
-        Me.Button2.Text = "Time Table"
+        Me.Button2.Text = "Manage"
         Me.Button2.UseVisualStyleBackColor = True
-        Me.Button2.Visible = False
         '
         'Button3
         '
